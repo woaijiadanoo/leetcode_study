@@ -11,7 +11,7 @@ public class TreeNode {
     public TreeNode left = null;
     public TreeNode right = null;
     public TreeNode(){};
-    TreeNode(Integer val) { this.val = val; }
+    public TreeNode(Integer val) { this.val = val; }
 
     @Override
     public String toString() {

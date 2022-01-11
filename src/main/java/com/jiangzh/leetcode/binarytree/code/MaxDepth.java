@@ -7,6 +7,12 @@ import jdk.nashorn.internal.ir.BinaryNode;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/*
+    104 题： 树的最大深度
+
+
+    https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/
+ */
 public class MaxDepth {
 
     public int maxDepth01(TreeNode root) {
