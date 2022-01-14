@@ -7,7 +7,7 @@ package com.jiangzh.leetcode.binarytree.base;
  * @param <E>
  */
 public class TreeNode {
-    Integer val;
+    public Integer val;
     public TreeNode left = null;
     public TreeNode right = null;
     public TreeNode(){};
