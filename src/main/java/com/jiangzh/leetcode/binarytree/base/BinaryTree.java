@@ -76,4 +76,25 @@ public class BinaryTree {
         }
     }
 
+    public static String preOrder(TreeNode root){
+        StringBuffer sb = new StringBuffer();
+
+        preOrder(root, sb);
+
+        return sb.toString();
+    }
+
+    private static void preOrder(TreeNode node,StringBuffer sb){
+        if(node == null){
+            sb.append("null").append(",");
+            return;
+        }
+
+        sb.append(node.val).append(",");
+
+        preOrder(node.left, sb);
+        preOrder(node.right, sb);
+
+    }
+
 }
