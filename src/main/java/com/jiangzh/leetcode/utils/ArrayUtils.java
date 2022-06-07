@@ -9,14 +9,15 @@ package com.jiangzh.leetcode.utils;
 public class ArrayUtils {
 
     public static void printArrays(int[][] input){
-        StringBuffer sb = new StringBuffer();
+
         for(int i=0; i<input.length; i++){
+            StringBuffer sb = new StringBuffer();
             for (int j=0; j<input[i].length;j++){
                 sb.append(input[i][j]).append(",");
-            }
-        }
 
-        System.out.println(sb.toString());
+            }
+            System.out.println(sb.toString());
+        }
     }
 
     public static void printArrays(int[] input){
