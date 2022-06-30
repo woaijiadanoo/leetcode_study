@@ -12,4 +12,29 @@ public class ListNode {
     public ListNode pre;
     public ListNode next;
 
+    public ListNode(){
+
+    }
+    public ListNode(int val){
+        this.val = val;
+    }
+
+    public static void print(ListNode root){
+        ListNode cur = root;
+        int i = 1;
+        while (true) {
+            if(cur != null){
+                System.out.println("cur "+ i +" = " + cur);
+                cur = cur.next;
+                i++ ;
+            }else{
+                break;
+            }
+        }
+    }
+
+    @Override
+    public String toString() {
+        return this.val+"";
+    }
 }
